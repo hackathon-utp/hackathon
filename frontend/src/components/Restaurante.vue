@@ -101,6 +101,7 @@
     </div>
     <div class="row justify-content-center">
         <div class="m-3 w-50 mb-5">
+          
             <div class="accordion" id="accordionRestaurante">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -114,12 +115,13 @@
                       </p>
                       <div class="row justify-content-evenly">
                         <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                        <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[0].autoevaluacion"></div>
+                        <div class="col-3 m-2"><input type="checkbox"
+                         v-model="evaluacion.lista_requisitos[0].autoevaluacion"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               2. Instalaciones
@@ -132,7 +134,7 @@
                       </p>
                       <div class="row justify-content-evenly">
                         <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                        <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[1]"></div>
+                        <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[1].autoevaluacion"></div>
                       </div>
                     </div>
                   </div>
@@ -149,7 +151,7 @@
                       </p>
                       <div class="row justify-content-evenly">
                         <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                        <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[2]"></div>
+                        <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[2].autoevaluacion"></div>
                       </div>
                     </div>
                   </div>
@@ -167,7 +169,7 @@
                       </p>
                       <div class="row justify-content-evenly">
                         <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                        <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[3]"></div>
+                        <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[3].autoevaluacion"></div>
                       </div>
                     </div>
                   </div>
@@ -184,7 +186,7 @@
                                 Deben disponerse de suficientes, adecuados y bien ubicados recipientes así como de locales e instalaciones si es del caso para el almacenamiento de los residuos sólidos, conforme a lo establecido en las normas sanitarias vigentes. Debe disponerse de recipientes de material sanitario para el almacenamiento de desperdicios orgánicos debidamente tapados, alejados del lugar donde se preparan los alimentos y deben ser removidos, lavados y desinfectados frecuentemente.</p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[4]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[4].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -201,7 +203,7 @@
                                         El recibo de insumos e ingredientes para la preparación y servido de alimentos se hará en un lugar limpio y protegido de la contaminación ambiental y se almacenarán en recipientes adecuados. </p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[5]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[5].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -218,7 +220,7 @@
                             </p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[6]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[6].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -235,7 +237,7 @@
                                       Los alimentos perecederos, tales como, leche y sus derivados, carne y preparados, productos de la pesca deben almacenarse en recipientes separados, bajo condiciones de refrigeración y/o congelación y no podrán almacenarse conjuntamente con productos preparados o listos para el consumo con el fin de evitar la contaminación cruzada.</p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[7]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[7].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -251,7 +253,7 @@
                             <p>El piso de las áreas húmedas de elaboración debe tener una pendiente mínima de 2% y al menos un drenaje de 10 cm de diámetro por cada 40 m2 de área servida; mientras que en las áreas de baja humedad ambiental y en los almacenes, la pendiente mínima será del 1% hacia los drenajes, se requiere de al menos un drenaje por cada 90 m2 de área servida. Las hortalizas y frutas que se consuman deben someterse a lavado y desinfección con sustancias autorizadas por el Ministerio de Salud y Protección Social. El lavado y desinfección de utensilios debe hacerse con agua potable corriente, jabón o detergente y cepillo y con especial cuidado en las superficies donde se pican o fraccionan los alimentos, las cuales deben estar en buen estado de conservación e higiene; las superficies para el picado deben ser de material sanitario, de preferencia plástico, nylon, polietileno o teflón.</p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[8]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[8].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -267,7 +269,7 @@
                             <p>Los alimentos o materias primas crudos, tales como, hortalizas, frutas, carnes y productos hidrobiológicos que se utilicen en la preparación de los alimentos deben ser lavados con agua potable corriente antes de su preparación. Se prohíbe el almacenamiento de sustancias peligrosas en la cocina, en las áreas de preparación de los alimentos o en las áreas de almacenamiento de materias primas.</p>
                                 <div class="row justify-content-evenly">
                                     <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                    <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[9]"></div>
+                                    <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[9].autoevaluacion"></div>
                                 </div>
                         </div>
                     </div>
@@ -283,7 +285,7 @@
                             <p>Los equipos y utensilios empleados en los restaurantes y establecimientos gastronómicos, deben cumplir con las condiciones establecidas en el Capítulo II de la presente resolución. La limpieza y desinfección de los utensilios que tengan contacto con los alimentos se hará en tal forma y con elementos o productos que no generen ni dejen sustancias peligrosas durante su uso. Esta desinfección debe realizarse mediante la utilización de agua caliente, vapor de agua o sustancias químicas autorizadas para este efecto. Cuando los establecimientos no cuenten con agua y equipos en cantidad y calidad suficientes para el lavado y desinfección, los utensilios que se utilicen deben ser desechables con el primer uso.</p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[10]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[10].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -301,7 +303,7 @@
                                         Las paredes deben ser de colores claros, materiales resistentes, impermeables, no absorbentes y de fácil limpieza y desinfección. Además hasta una altura adecuada, las mismas deben poseer acabado liso y sin grietas, pueden recubrirse con material cerámico o similar o con pinturas plásticas que reúnan los requisitos antes indicados.</p>
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[11]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[11].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
@@ -318,15 +320,15 @@
                                       El personal que está directamente vinculado a la preparación o servido de los alimentos no debe manipular dinero simultáneamente. </p>                              
                             <div class="row justify-content-evenly">
                                 <div class="col-7 m-2"><h5>¿Cumple este requerimiento?</h5></div>
-                                <div class="col-3 m-2"><input type="checkbox" v-model="empresa.autoevaluacion[12]"></div>
+                                <div class="col-3 m-2"><input type="checkbox" v-model="evaluacion.lista_requisitos[12].autoevaluacion"></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             <!---cierre acoridion--->
             </div>
             <div class="row justify-content-center m-3">
-             <button type="submit" class="guardar btn m-2" v-on:click="test">Guardar Cambios</button>
+             <button type="submit" class="guardar btn m-2" v-on:click="actualizarEvaluacion">Guardar Cambios</button>
              <button type="submit" class="ver btn m-2" v-on:click="test">Ver resultados</button>
             </div>
         </div>
@@ -385,28 +387,52 @@
     </div>
 </template>
 <script>
+import ruta from "../router/rutaAPI";
 import axios from "axios";
+
+
 export default {
   data() {
     return {
       nit:sessionStorage.getItem("nit"),
       empresa:{
-        autoevaluacion: [{autoevaluacion:true, auditoria:false}, true, false, true, false, false,
-        true, false, true, false, false, false, true],
+        autoevaluacion: [],
       },  
       evaluacion:{
         lista_requisitos: [],
+        
       },
     };
  },
+ created() {
+   console.log(ruta.ruta_api);
+   let config = {
+  headers: {
+    authorization:`Bearer ${localStorage.jwtToken}` ,
+  }
+  }
+  let apiURL = `${ruta.ruta_api}/normatividad/consultar-idEmpresa`;
+   
+  axios
+        .get(apiURL, config)
+        .then((res) => {
+            this.evaluacion= res.data[0];
+            console.log(`evaluacion:${res.data}`);
+            
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+  },
    methods:{
-      test(){
-        let apiURL = "localhost:4000/evaluacion/actualizar-empresa";
-                axios.defaults.headers.common["Authorization"] = localStorage.getItem(
-                  "jwtToken"
-                );
+      actualizarEvaluacion(){
+        let apiURL = `${ruta.ruta_api}/normatividad/actualizar-evaluacion/${this.evaluacion._id}`;
+        
                 axios
-                .put(apiURL, this.empresa)
+                .put(apiURL, this.evaluacion)
+                .then((res)=>{
+                  console.log(res);
+                })
                 .catch((err) => {
                   this.$router.push({name: "restaurante"});
                   console.log(err);

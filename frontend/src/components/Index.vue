@@ -271,7 +271,8 @@
     </div>
 </template>
 <script>
-import axios from "axios"
+import axios from "axios";
+import ruta from "../router/rutaAPI"
 export default {
   data() {
  return {
@@ -280,17 +281,37 @@ export default {
     clave :""
   },
   evaluacion:{
-    normatividad:"resolucion-2021"
+    normatividad:"resolucion-2021",
+    lista_requisitos:[
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false},
+      {autoevaluacion:false, auditoria:false}
+    ],
+    observaciones:""
   }
   };
  },
     methods: {
         onSubmit() { 
+          
+          let apiURL=`${ruta.ruta_api}/usuarios/sesion-usuario`;
+          
             axios
-            .post(`http://localhost:4000/usuarios/sesion-usuario`, this.empresa)
+            .post(apiURL, this.empresa)
             .then((res) => {
               sessionStorage.setItem("nit", res.data.nit),
-              localStorage.setItem("jwtToken", res.data.token); 
+              localStorage.setItem("jwtToken", res.data.token);
+           
               console.log(res.data);
               this.$router.push(`/restaurante`); 
               })
@@ -301,8 +322,9 @@ export default {
               
         },
         registrarse() {
-                let apiURL = "http://localhost:4000/usuarios/crear-empresa";
-                let apiCreadorEvaluacion="http://localhost:4000/normatividad/crear-evaluacion";
+                let apiURL = `${ruta.ruta_api}/usuarios/crear-empresa`;
+                let apiCreadorEvaluacion=`${ruta.ruta_api}/normatividad/crear-evaluacion`;
+                
                 axios
                 .post(apiURL, this.empresa)
                 .then((res) => {
@@ -328,7 +350,7 @@ export default {
                 .catch((err) => {
                   this.$router.push({name: "index"});
                   console.log(err);
-                });    
+                });
             }
     }   
 }
