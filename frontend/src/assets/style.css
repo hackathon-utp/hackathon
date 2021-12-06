@@ -1,0 +1,175 @@
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ecf3ff !important;  
+  }
+  .header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ecf3ff !important;  
+  }
+  footer{
+    background-color: #e3eaf1 !important;
+  }
+  .logo img{
+    margin: 15px 25px 10px 75px;
+    height: 75px;
+  }
+  .logo-center img{
+    margin: 15px 25px 10px 50px;
+    height: 75px;
+  }
+  .iniciar_text{
+    text-align: left;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    color: rgb(238, 242, 245);
+    background-color: #417b88;
+    border-color: #40708b;
+  }
+  .iniciar_text:hover{
+    color: rgb(219, 239, 255);
+    background-color: #1c5988;
+    border-color: #2f75ad;
+  }
+  .iniciar_text a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(238, 242, 245);
+  }
+  .confirmar {
+    color: rgb(231, 238, 243);
+    background-color: #041c3b;
+  }
+  .confirmar:hover {
+    color: rgb(255, 255, 255);
+    background-color: #17365e;
+  }
+  .iniciar_sesion{
+      margin-right: 60px;
+    margin-top: 30px;
+    }
+  .fondo1{
+      height: 5px;
+      background-color: rgb(10, 29, 46);
+      }
+  .banner-inicio{
+  height: 350px;
+  width: 100%;  
+  box-shadow: 0px 3px 3px 0px rgba(23, 73, 121, 0.219);
+}
+.logos-footer{
+    text-decoration: none;
+    margin: 0px 20px 10px 0px;
+    padding-top: 10px;
+  }
+  .logo-footer-acerca{
+    height: 60px;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+  }
+  .iconos-footer{
+    margin: 0px 20px 10px 0px;
+    padding-top: 10px;
+    width: 45px;
+    height: 45px;
+    fill: rgb(10, 29, 46);
+    text-decoration: none;
+  }
+  .baseDerechos {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    vertical-align: middle;
+    background: rgb(10, 29, 46);
+    padding: 10px 0 10px 0;
+  }
+  .baseDerechos a{
+    text-decoration: none;
+    color: #accdf8;
+  }
+  .baseDerechos a:hover{
+    color: #4f9bff;
+  }
+  .navbar{
+      background-color: rgb(10, 29, 46);
+      height: 70px;
+      margin: 0;
+      padding: 0;
+  }
+  .caja-publicidad .publi{
+    text-align: center;
+    padding: 20px;
+    display: block;
+    color: #ffffff;
+  }
+  .caja-publicidad:hover .publi{
+    display: none;
+  }
+  .publi-oculta{
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+    font-size: 35px;
+    display: none;
+    color: #e9edf3;
+  }
+  .publi-oculta-link{
+    text-align: center;
+    margin: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    display: none;
+    color: #83b9ff;
+  }
+  .publi-oculta-link:hover{
+    color: #358dff;
+  }
+  .caja-publicidad:hover .publi-oculta{
+    display:block;
+  }
+  .caja-publicidad:hover .publi-oculta-link{
+    display:block;
+  }
+  .caja-publicidad{
+    background-color: #081322;
+  }
+  .caja-publicidad:hover img{
+    opacity: 0.05;
+  }
+  .imagen-publicidad{
+    object-fit:cover;
+    opacity: 0.2;
+  }
+  
+  .logo_admin img{
+    margin: 15px 10px 30px 10px;
+    height: 115px;
+  }
+  .guardar {
+    width: 180px;
+    color: rgb(231, 238, 243);
+    background-color: #041c3b;
+  }
+  .guardar:hover {
+    color: rgb(255, 255, 255);
+    background-color: #17365e;
+  }
+  .ver {
+    width: 180px;
+    color: rgb(231, 238, 243);
+    background-color: #173a52;
+  }
+  .ver:hover {
+    color: rgb(255, 255, 255);
+    background-color: #455d7e;
+  }
+
+
+  
